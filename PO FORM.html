@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>POF</title>
+</head>
+<body style="background-color: rgb(129, 16, 127);">
+    <h1>Purchase Order Form</h1>
+    <p>Kindly fill in the given details and the materials yoou require</p>
+    <form id="myForm">
+    Name:
+    <input type="text" name="firstname" placeholder="your first name" required><br>
+    Surname:
+    <input type="text" name="lastname" placeholder="your last name" required><br>
+    Email Id:
+    <input type="text" name="email" placeholder="your email id"required><br>
+    Mobile No:
+    <input type="text" name="mobile" placeholder="your mobile no." required><br>
+    Company Name:
+    <input type="text" name="companyname" placeholder="your company name" required><br><br>
+
+    Select Your company type:
+    <select name="Select Your Comapany type">
+        <option>Public Financial Institutions</option>
+        <option>Nidhi Companies</option>
+        <option>Dormant Companies</option>
+        <option selected>One Person Company (OPC)</option>
+        <option>Private Company</option>
+        <option>Public Company</option>
+        <option>Holding and Subsidiary Company</option>
+        <option>Associate Company</option>
+        <option>Foreign Company</option>
+        <option>Charitable Company</option>
+        <option>Government Company</option>
+    </select><br><br>
+
+    Material you require with quantity<br>
+    <textarea name="paragraph" rows="5" cols="25"></textarea><br><br>
+
+   
+
+   
+    
+
+   
+  
+        <input type="submit" value="Submit" id="submitButton">
+    </form>
+    <script>
+        
+        var submitButton = document.getElementById('submitButton');
+    
+        submitButton.addEventListener('click', function(event) {
+          event.preventDefault(); 
+          alert('Your responses are recorded !!!!!!');
+        
+        });
+      </script>
+    
+    
+    
+</body>
+</html>
